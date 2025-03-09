@@ -1,0 +1,66 @@
+#opt
+n_epoch: 100          # number of epochs
+B1: 32                 # batch size
+B: 32                 # batch size
+B_seq1: 32             # sequential batch size, set either to
+                      # B (eager and lazy loading) or 1 (eager sequential loading)
+B_seq: 32            # sequential batch size, set either to
+                      # B (eager and lazy loading) or 1 (eager sequential loading)
+n_epoch_warmup: 10    # number of warm-up epochs
+lr: 0.0001            # learning rate
+wd: 0.1               # weight decay
+
+#dset
+n_class: 5                      # number of classes
+project: 'IPS-zx'
+wandb: True
+data_dir: '/home/xx/ips/ips-main/DR_grading'  # directory of dataset
+n_worker: 8                     # number of workers
+pin_memory: True                # use pin memory in dataloader
+eager: True                     # eager or lazy loading
+save_dir: '/home/xx/ips/ips-main/output/'
+title: 'eyes-lr0.0001'
+
+#misc
+eps: 0.000001
+seed: 0
+track_efficiency: False   # for training, needs to be False
+track_epoch: 0            # only relevant if efficiency stats are tracked.
+
+#enc
+is_image: True          # should a convolutional patch encoder be used?
+enc_type: 'resnet50'    # used backbone, set either to 'resnet18' or 'resnet50'
+pretrained: True        # should ImageNet weights be used?
+n_chan_in: 3            # number of input channels
+n_res_blocks: 4         # number of residual ResNet blocks
+
+#ips
+shuffle: True                 # should patches be shuffled?
+shuffle_style: 'batch'        # shuffle each instance the same way? 'batch' or 'instance'
+n_token: 1                    # Number of learnable query tokens
+N1: 36
+N: 36                        # Number of total patches, needs to be consistent with patch size/stride
+M1: 4
+M: 4                         # memory size
+I1: 16
+I: 16                         # iteration size
+S: 10
+patch_size: [200, 200]        # dims of patch
+patch_stride: [200, 200]      # stride of patch
+
+#aggr
+use_pos: False        # should positional encoding be used?
+H: 8                  # number of transformer layer heads
+D: 512                # dimension of features
+D_k: 64               # dimension of query/keys per head
+D_v: 64               # dimension of values per head
+D_inner: 2048         # hidden dimension of MLP
+attn_dropout: 0.1     # attention dropout
+dropout: 0.1          # standard dropout
+
+tasks:
+  task0:
+    id: 0
+    name: 'sign'
+    act_fn: 'softmax'
+    metric: 'accuracy'
