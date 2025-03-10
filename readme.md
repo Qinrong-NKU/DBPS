@@ -20,7 +20,7 @@ Over the last decade, many notable methods have emerged to tackle the computatio
 <p align="center">
   <img width="95%" src="./Figure/figure2.png">
 </p>
-We firstly divide the high-resolution image into image patches and randomly drop some of them. Next, we initial two buffers $P_M^{0}$ and $P'^{0}_{S}$, and iteratively update them in no-gradient mode to find the most salient patches and the sub-salient patches. After patch selection, $P_M^{T}$ is embedded again in gradient mode, and then input into the cross-attention layer to be aggregated. The aggregated embedding can be denoted as the salient query for the better aggregation of no-gradient $P'^{t}_{S}$.
+We firstly divide the high-resolution image into image patches and randomly drop some of them. Next, we initial two buffers $$P_M^{0}$$ and $$P'^{0}_{S}$$, and iteratively update them in no-gradient mode to find the most salient patches and the sub-salient patches. After patch selection, $$P_M^{T}$$ is embedded again in gradient mode, and then input into the cross-attention layer to be aggregated. The aggregated embedding can be denoted as the salient query for the better aggregation of no-gradient $$P'^{t}_{S}$$.
 
 ## 1. Requirements
 
