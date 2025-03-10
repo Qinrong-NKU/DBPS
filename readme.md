@@ -5,7 +5,7 @@
   <a href="https://xinliu29.github.io/">Xin Liu</a>,
   Xingyu Liu,
   Jiaxuan Liu,
-  <a herf="https://jingleishi.github.io/">Jinglei Shi</a>,
+  <a href="https://jingleishi.github.io/">Jinglei Shi</a>,
   Liang Lin,
   <a href="https://cv.nankai.edu.cn/">Jufeng Yang</a>,
 </p>
