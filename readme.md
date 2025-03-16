@@ -34,14 +34,12 @@ pytorch=1.13.0,torchvision=0.14.0
     # Acknowledgement
 This code is borrowed from [[IPS-Transformer](https://github.com/benbergner/ips)] If you use the part of code, you should cite both our work and IPS-Transformer:
 ```bibtex
-```bibtex
 @inproceedings{bergner2022iterative,
   title={Iterative patch selection for high-resolution image recognition},
   author={Bergner, Benjamin and Lippert, Christoph and Mahendran, Aravindh},
   booktitle={International Conference on Learning Representations},
   year={2022}
 }
-```
 ```  
 
     
