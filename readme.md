@@ -1,15 +1,5 @@
 <h1 align="center"> No Pains, More Gains: Recycling Sub-Salient Patches for Efficient High-Resolution Image Recognition </h1>
 
-<p align="center">
-  <a href="https://qinrong-nku.github.io/">Rong Qin</a>,
-  <a href="https://xinliu29.github.io/">Xin Liu</a>,
-  Xingyu Liu,
-  Jiaxuan Liu,
-  <a href="https://jingleishi.github.io/">Jinglei Shi</a>,
-  Liang Lin,
-  <a href="https://cv.nankai.edu.cn/">Jufeng Yang</a>,
-</p>
-
 <p align="center"> CVPR 2025 </p>
 
 ## Abstract
@@ -20,7 +10,6 @@ Over the last decade, many notable methods have emerged to tackle the computatio
 <p align="center">
   <img width="95%" src="./Figure/figure2.png">
 </p>
-We firstly divide the high-resolution image into image patches and randomly drop some of them. Next, we initial two buffers $$P_M^{0}$$ and $$P'^{0}_{S}$$, and iteratively update them in no-gradient mode to find the most salient patches and the sub-salient patches. After patch selection, $$P_M^{T}$$ is embedded again in gradient mode, and then input into the cross-attention layer to be aggregated. The aggregated embedding can be denoted as the salient query for the better aggregation of no-gradient $$P'^{t}_{S}$$.
 
 ## 1. Requirements
 
