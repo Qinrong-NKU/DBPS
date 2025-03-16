@@ -13,7 +13,7 @@ Over the last decade, many notable methods have emerged to tackle the computatio
 
 ## 1. Requirements
 
-Python 3.8+, Pytorch 1.9.0, Cuda 11.1, , opencv-python
+pytorch=1.13.0,torchvision=0.14.0
 
 
 
