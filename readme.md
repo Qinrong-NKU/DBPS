@@ -2,7 +2,7 @@
     <h1>No Pains, More Gains:</br>
 Recycling Sub-Salient Patches for Efficient High-Resolution Image Recognition </h1>
 
-[**Rong Qin**](https://qinrong-nku.github.io/),[**Xin Liu**](https://xinliu29.github.io/),**Xingyu Liu**,**Jiaxuan Liu**,**Jinglei Shi**,**Liang Lin**,[**Jufeng Yang<sup>†</sup>**](https://cv.nankai.edu.cn/)
+[**Rong Qin**](https://qinrong-nku.github.io/), [**Xin Liu**](https://xinliu29.github.io/), **Xingyu Liu**, **Jiaxuan Liu**, **Jinglei Shi**, **Liang Lin**, [**Jufeng Yang<sup>†</sup>**](https://cv.nankai.edu.cn/)
 
 [CVPR 2025](https://ieeexplore.ieee.org/document/11094757) 
 </div>
@@ -30,7 +30,7 @@ We firstly divide the high-resolution image into image patches and randomly drop
 <div align=center>
     <h1>Breaking the Context-Cost Trade-off in High-Resolution Image Recognition via Recycling Sub-Salient Patches </h1>
 
-[**Rong Qin**](https://qinrong-nku.github.io/),**Yao Liu**,[**Xin Liu**](https://xinliu29.github.io/),**Jianyuan Guo**,**Jin Wu**,**Chi-Man Vong**,**Liang Lin**,[**Jufeng Yang<sup>†</sup>**](https://cv.nankai.edu.cn/)
+[**Rong Qin**](https://qinrong-nku.github.io/), **Yao Liu**, [**Xin Liu**](https://xinliu29.github.io/), **Jianyuan Guo**, **Jin Wu**, **Chi-Man Vong**, **Liang Lin**, [**Jufeng Yang<sup>†</sup>**](https://cv.nankai.edu.cn/)
 
 
 [Extended version]
