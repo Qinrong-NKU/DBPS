@@ -1,0 +1,85 @@
+# Optimization parameters
+n_epoch: 100                  # Number of training epochs
+n_epoch_warmup: 10            # Number of warm-up epochs
+lr: 0.0001                    # Learning rate
+wd: 0.1                       # Weight decay
+
+lrs: False                     # Whether to use lrs (erforms salient patch selection on the low-resolution imag)
+
+# Batch parameters
+B: 128
+B_seq: 128                    # B for eager and lazy loading, 1 for eager sequential loading
+
+single: False                 # Whether to use ips
+
+# Parallel and testing settings
+isParallel: False             # Whether to use parallel computing
+isOnlyTest: False             # Whether to perform only testing
+eval_vis_path: ''  # Path for evaluation visualization
+eval_with_attn: False          # Whether to show attention during evaluation
+test_dir: ''  # Path to test model
+
+# Dataset parameters
+height: 1200                  # Image height
+width: 1200                   # Image width
+n_class: 4                    # Number of classes
+data_dir: ''  # Dataset directory
+n_worker: 8                   # Number of data loading workers
+pin_memory: True              # Whether to use pinned memory
+eager: True                   # Eager or lazy loading
+
+# Project and saving settings
+project: 'DBformer_experiment' # Project name
+wandb: False                  # Whether to use wandb
+swanlab: False                # Whether to use swanlab
+save_dir: ''  # Saving directory
+title: 'XBD-DB+-resnet18-ABX-Half-acc'  # Experiment title
+
+# Miscellaneous settings
+eps: 0.000001                 
+seed: 0                       # Random seed
+track_efficiency: False       # Whether to track efficiency statistics
+track_epoch: 0                # epoch for efficiency tracking
+
+# Encoder parameters
+is_image: True                # Whether to use convolutional patch encoder
+enc_type: 'resnet18'          # Encoder type
+pretrained: True              # Whether to use encoder with pretrained weights
+
+n_chan_in: 3                  # Number of input channels
+n_res_blocks: 4               # number of residual ResNet blocks
+
+# DBformer parameters
+shuffle: False                # Whether to shuffle patches
+attention: 'ABX'              # Attention type
+shuffle_style: 'batch'        # Shuffling style: 'batch' or 'instance'
+sample_style: 'Half'          # Sampling style: 'Hard', 'prob' or 'half'
+n_token: 1                    # Number of learnable query tokens
+N1: 36
+N: 36                         # Total number of patches, must be consistent with patch size/stride
+M: 2                          # Memory size
+test_M: 2                     
+I1: 10
+I: 10                         # Number of iterations
+S: 8
+ratio: 0.3                    # The discard rate of random sampling
+patch_size: [200, 200]        # Patch dimensions
+patch_stride: [200, 200]      # Patch stride
+
+# Aggregation parameters
+use_pos: False                # Whether to use positional encoding
+H: 8                          # Number of transformer heads
+D: 512                        # Feature dimension
+D_k: 64                       # Dimension of query/keys per head
+D_v: 64                       # Dimension of values per head
+D_inner: 2048                 # Hidden dimension of MLP
+attn_dropout: 0.1             # Attention dropout rate
+dropout: 0.1                  # transf dropout rate
+
+
+tasks:
+  task0:
+    id: 0
+    name: 'sign'
+    act_fn: 'softmax'
+    metric: 'accuracy'
