@@ -160,7 +160,7 @@ wandb: true               # Enable WandB monitoring
 swanlab: false            # Enable SwanLab monitoring
 ```
 
-You can refer to the files in the shared configuration file directory `new_config/` for modifications.
+You can refer to the files in the shared configuration file directory `config/` for modifications.
 
 ## Citing 
 If you find the code useful, please consider citing:
